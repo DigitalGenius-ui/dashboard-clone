@@ -1,8 +1,8 @@
 import './App.css';
-import Header from './components/Header';
+import Header from './components/header/Header';
 import styled from 'styled-components';
 import Menu from './components/menuItems/Menu';
-import Home from './components/menuItems/Home';
+import Home from './pages/Home';
 
 function App() {
   return (
@@ -26,15 +26,14 @@ export default App;
 
 const Flex = styled.div`
   display : flex;
-  align-items: center;
   gap : 0.5rem;
+  width : 100%;
+  padding-right: 0.8rem;
   .menu{
     flex : 1;
-    background-color: rgba(0, 139, 219, 0.041);
-    padding : 1rem;
   }
   .details{
-    flex : 3.8;
+    flex : 3.4;
   }
 `
 const Items = styled.div``

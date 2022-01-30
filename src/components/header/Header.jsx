@@ -27,7 +27,11 @@ const Container = styled.div`
     display : flex;
     align-items : center;
     justify-content : space-between;
-    padding : 0.5rem 1rem;
+    padding : 0 1rem;
+    height : 50px;
+    position : sticky;
+    top : 0;
+    background : white;
 `
 const Logo = styled.div`
     .logo{

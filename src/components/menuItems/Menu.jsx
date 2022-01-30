@@ -49,6 +49,14 @@ const Menu = () => {
 export default Menu;
 
 const Container = styled.div`
+  position : sticky;
+  top : 50px;
+  left : 0;
+  right : 0;
+  background-color: rgba(0, 139, 219, 0.041);
+  height : calc(100vh - 50px);
+  padding : 0 1rem;
+  padding-top: 0.4rem;
   .menuName{
     font-size: 0.8rem;
     font-weight: 600;
@@ -56,7 +64,7 @@ const Container = styled.div`
   }
 `
 const Items = styled.div`
-  padding : 0.5rem;
+  padding : 0.2rem 0.5rem;
   .active{
     background-color: rgba(0, 139, 219, 0.123);
     border-radius: 4px;
