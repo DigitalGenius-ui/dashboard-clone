@@ -5,6 +5,7 @@ import Item from './Item';
 import { ViewDay, Timeline, TrendingUp, 
 PersonOutline, AttachMoneyOutlined, AllInbox, BarChartOutlined, EmailOutlined,
 DynamicFeedOutlined, ChatBubbleOutlineOutlined, WorkOutlineOutlined, Report  } from '@material-ui/icons';
+import { Link } from 'react-router-dom';
 
 const Menu = () => {
   return (
@@ -13,7 +14,7 @@ const Menu = () => {
           Dashboard
         </Typography>
         <Items  className="icon">
-          <Item Icon={ViewDay} name="home" className="active"/>
+          <Link to="/"><Item Icon={ViewDay} name="home" className="active"/></Link>
           <Item Icon={Timeline} name="analytics"/>
           <Item Icon={TrendingUp} name="sales"/>
         </Items>
@@ -21,7 +22,7 @@ const Menu = () => {
           Quick Menu 
         </Typography>
         <Items className="icon">
-          <Item Icon={PersonOutline} name="user"/>
+          <Link to="/user"><Item Icon={PersonOutline} name="user"/></Link>
           <Item Icon={AllInbox} name="products"/>
           <Item Icon={AttachMoneyOutlined} name="transaction"/>
           <Item Icon={BarChartOutlined} name="reports"/>
@@ -68,5 +69,9 @@ const Items = styled.div`
   .active{
     background-color: rgba(0, 139, 219, 0.123);
     border-radius: 4px;
+  }
+  a{
+    color : #0000009e;
+    text-decoration: none;
   }
 `

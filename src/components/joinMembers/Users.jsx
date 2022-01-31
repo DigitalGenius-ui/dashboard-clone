@@ -6,7 +6,7 @@ import { RemoveRedEye } from '@material-ui/icons';
 const Users = ({ img, name, position }) => {
   return(
     <User>
-        <Avatar style={{width : "2.5rem", height : "2.5rem"}} src={img}/>
+        <Avatar style={{width : "3rem", height : "3rem"}} src={img}/>
         <Name>
             <h4>{name}</h4>
             <p style={{fontSize : "0.8rem"}}>{position}</p>

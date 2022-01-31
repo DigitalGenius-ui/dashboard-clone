@@ -3,21 +3,26 @@ import Header from './components/header/Header';
 import styled from 'styled-components';
 import Menu from './components/menuItems/Menu';
 import Home from './pages/Home';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Users } from './pages/Users';
 
 function App() {
   return (
     <>
+      <BrowserRouter>
       <Header />
       <Flex>
         <div className='menu'>
           <Menu/>
         </div>
         <Items className='details'>
-          <div >
-            <Home/>
-          </div>
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path= "/user" element={<Users/>} />
+          </Routes>
         </Items>
       </Flex>
+      </BrowserRouter>
     </>
   );
 }

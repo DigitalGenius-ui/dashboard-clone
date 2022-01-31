@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Typography } from '@material-ui/core';
 import Users from './Users';
+import { Transactions } from '../Newtransactions/Transactions';
 
 const NewMembers = () => {
   return (
@@ -20,7 +21,9 @@ const NewMembers = () => {
                 img= "https://img.freepik.com/free-photo/pleasant-looking-serious-man-stands-profile-has-confident-expression-wears-casual-white-t-shirt_273609-16959.jpg?size=626&ext=jpg"
               />
           </NewMember>
-          <Transactions>Transactions</Transactions>
+          <Transaction>
+            <Transactions />
+          </Transaction>
       </Container>
   );
 };
@@ -43,7 +46,7 @@ const NewMember = styled.div`
     }
 `
 
-const Transactions = styled.div`
+const Transaction = styled.div`
     flex: 2.3;
     box-shadow: 0px 0px 6px -1px black;
     padding : 1rem;
